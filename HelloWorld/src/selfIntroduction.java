@@ -12,7 +12,7 @@ public class selfIntroduction {
 
 /*
  * 　　	自己紹介文を
- *		出力する処理
+ *		出力する処理　00
  */	
 		System.out.println("私の名前は" + name + "です。");
 		System.out.println("年齢は" + age + "歳です。");
