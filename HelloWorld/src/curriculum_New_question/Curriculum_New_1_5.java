@@ -14,26 +14,42 @@ public class Curriculum_New_1_5 {
 	        // 「好きな食べ物は○○です」
 
 	    	// Q1を下記に記載
+			// 名前の宣言
 			String str = "山田太郎";
-			System.out.println("初めまして" + str + "です");
+			// 年齢の宣言
 			byte byte1 = 18;
-			System.out.println("年齢は" + byte1 + "歳です");
+			// 身長の宣言
 			double d = 170.5;
-			System.out.println("身長は" + d + "cmです");
+			// 体重の宣言
 			double d2 = 62.2;
-			System.out.println("体重は" + d2 + "kgです");
+			// 好きな食べ物宣言
 			class Food{
 				String likeFood;
 			}
+			
 			Food myFood = new Food();
 			myFood.likeFood = "寿司";
+			
+			// 名前
+			System.out.println("初めまして" + str + "です");
+			// 年齢
+			System.out.println("年齢は" + byte1 + "歳です");
+			// 身長
+			System.out.println("身長は" + d + "cmです");
+			// 体重
+			System.out.println("体重は" + d2 + "kgです");
+			// 好きな食べ物
 			System.out.println("好きな食べ物は" + myFood.likeFood + "です");
 	        // Q2 Q1で作成した自己紹介に続いて、BMIがコンソールに出力されるようにしてください
 	    	// 「BMIは○○です」
 	        // ただし計算は数値を直書きせず、全て変数を使ってすること
 			
 	        // Q2を下記に記載
-			System.out.println("BMIは" + (d2 / (( d / 100 ) * ( d / 100 ))) + "です");  	
+			// BMI
+			double bmi = d2 / (( d / 100 ) * ( d / 100 ));
+			System.out.println("BMIは" + (String.format("%.1f",bmi)) + "です");
+			System.out.println("");
+			
 	        // Q3 Q1で宣言した変数に再代入し、下記の通りコンソールに出力してください
 	    	// 初めまして鈴木一郎です
 	    	// 年齢は24歳です
@@ -43,18 +59,30 @@ public class Curriculum_New_1_5 {
 	    	// BMIは22.6です
 
 	        // Q3を下記に記載
+			// 名前の宣言
 			str = "鈴木一郎";
-			System.out.println("初めまして" + str + "です");
+			// 年齢の宣言
 			byte1 = 24;
-			System.out.println("年齢は" + byte1 + "歳です");
+			// 身長の宣言
 			d = 168.5;
-			System.out.println("身長は" + d + "cmです");
+			// 体重の宣言
 			d2 = 64.2;
-			System.out.println("体重は" + d2 + "kgです");
+			// 好きな食べ物の宣言
 			myFood.likeFood = "オムライス";
+			
+			// 名前
+			System.out.println("初めまして" + str + "です");
+			// 年齢
+			System.out.println("年齢は" + byte1 + "歳です");
+			// 身長
+			System.out.println("身長は" + d + "cmです");
+			// 体重
+			System.out.println("体重は" + d2 + "kgです");
+			//好きな食べ物
 			System.out.println("好きな食べ物は" + myFood.likeFood + "です");
-//			BMI
-			System.out.println("BMIは" + (d2 / (( d / 100 ) * ( d / 100 ))) + "です");
+			// BMI
+			double bmi2 = d2 / (( d / 100 ) * ( d / 100 ));
+			System.out.println("BMIは" + (String.format("%.1f",bmi2)) + "です");  	
 	    	// ↓↓コンソール最終結果↓↓
 	    	
 	    	//	初めまして山田太郎です
