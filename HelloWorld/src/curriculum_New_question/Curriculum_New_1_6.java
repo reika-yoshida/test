@@ -8,10 +8,12 @@ public class Curriculum_New_1_6 {
 		// TODO 自動生成されたメソッド・スタブ
 //		問１）
 //		変数 x を宣言し、「3」を代入して下さい。
+//		宣言
 		int x;
+//		代入
 		x = 3;
 //		変数 x に自己代入を使って「20」を掛け算して下さい。
-		x = x * 20;
+		x *= 20;
 //		その後 x の値をコンソールに表示して下さい。
 		System.out.println(x);
 		
@@ -36,8 +38,10 @@ public class Curriculum_New_1_6 {
 //		あなたの年齢を予想します。
 //		あなたの年齢はおそらく〇〇歳ですね？
 		String text = "あなたの年齢を予想します。";
+		
 		Random rnd = new Random();
 		int value = rnd.nextInt(101)+1;
+		
 		System.out.println(text);
 		System.out.println("あなたの年齢はおそらく" + value + "歳ですね？");
 	}
