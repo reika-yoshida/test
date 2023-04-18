@@ -47,7 +47,7 @@ public class Curriculum_New_1_8 {
 //		booleanの宣言
 		boolean result_4;
 //		条件式
-		result_4 = (g < 5 || g > 10);
+		result_4 = (g <= 5 || g >= 10);
 //		コンソール
 		System.out.println(result_4);
 	}
