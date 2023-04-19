@@ -24,19 +24,19 @@ public class Curriculum_New_1_9 {
 //		もし score が 60点以上、80点以下なら「〇〇さんは□□点です。よくできました。」、
 //		もし score が 80点以上なら「〇〇さんは□□点です。たいへんよくできました。」とコンソールに出力して下さい。
 //		string代入
-		String name = "テスト";
+		String name = "太郎";
 //		乱数代入
 		Random rand = new Random();
-		int score = rand.nextInt(101)+1;
+		int score = rand.nextInt(101);
 //		if文
 		if(score <= 40) {
-			System.out.println("「〇〇さんは□□点です。もう少し頑張りましょう。」");
+			System.out.println(name + "さんは" + score + "点です。もう少し頑張りましょう。");
 		}else if(score >= 40 && score <= 60){
-			System.out.println("「〇〇さんは□□点です。もう少しでした。」");
+			System.out.println(name + "さんは" + score + "点です。もう少しでした。");
 		}else if(score >=60 && score <= 80) {
-			System.out.println("「〇〇さんは□□点です。よくできました。」");
+			System.out.println(name + "さんは" + score + "点です。よくできました。");
 		}else if(score <= 80) {
-			System.out.println("「〇〇さんは□□点です。たいへんよくできました。」");
+			System.out.println(name + "さんは" +score + "点です。たいへんよくできました。");
 		}
 //		問３）
 //		①変数 isTired を定義し、0 か 1 を代入する。（どちらを代入しても構わない。）
@@ -50,9 +50,9 @@ public class Curriculum_New_1_9 {
 		String study = "カリキュラム";
 //		③if文
 		if(isTired == 0) {
-			System.out.println("「私はとても元気です。」");
+			System.out.println("私はとても元気です。");
 		}else {
-			System.out.println("「私は疲れています。」");
+			System.out.println("私は疲れています。");
 		}
 //		④三項演算子
 		System.out.println( isTired == 0 ? study + "を続けます。" : "");
