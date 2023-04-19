@@ -13,14 +13,14 @@ public class Curriculum_New_1_10_2 {
 								・
 						9×1=9 9×2=18…9×9=81
 		 */
-		//　1~9を格納
-		int num[] = {1,2,3,4,5,6,7,8,9};
 		//掛け算ループ表示
-		for(int i =0;i < num.length;i++) {
-			for(int j = 0;j <num.length;j++) {
-				int kuku = num[i]*num[j];
-				System.out.println(num[i] + "×" + num[j] + "=" + kuku);
+		for(int i =1;i <= 9;i++) {
+			for(int j = 1;j <= 9;j++) {
+				int kuku = i * j;
+				System.out.print(i + "×" + j + "=" + kuku + " ");
 			}
+			//改行
+			System.out.println();
 		}
 	}
 
