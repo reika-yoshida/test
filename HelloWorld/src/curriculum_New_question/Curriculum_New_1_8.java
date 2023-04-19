@@ -13,7 +13,7 @@ public class Curriculum_New_1_8 {
 //		booleanの宣言
 		boolean result_1;
 //		条件式
-		result_1 = (a > b);
+		result_1 = (a >= b);
 //		コンソール
 		System.out.println(result_1);
 
