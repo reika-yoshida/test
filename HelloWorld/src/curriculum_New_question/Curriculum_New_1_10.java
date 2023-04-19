@@ -18,7 +18,7 @@ public class Curriculum_New_1_10 {
 							21
 		 */
 		//	①iに1を代入 ②繰り返す処理
-		for(int i=1;i<22;i=i+2) {
+		for(int i=3;i<22;i=i+2) {
 			System.out.println(i);
 		}
 	}
