@@ -23,13 +23,11 @@ public class Curriculum_New_1_18 {
 		int[] numbers = rndNumbers(count);
 		// Q6呼び出し
 		// 引数にQ5の戻り値を代入
-		int[] total = rndNumbers(count);
-		average(total);	
+		double bb = average(numbers);
 		// Q7呼びだし
 		// 引数にQ6の戻り値を代入
-		double total2 = average(total);
 		// 条件
-		if(cc(total2)) {
+		if(cc(bb)) {
 			// 受け取った値が50以上ならばtrue
 			System.out.println("true");
 		}else {
@@ -46,7 +44,7 @@ public class Curriculum_New_1_18 {
 		// コンソールに出力
 		System.out.println(s + i);
 	}
-	
+
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 	// Q2のメソッド
 	public static void calculate(int x,int y) {
@@ -55,7 +53,7 @@ public class Curriculum_New_1_18 {
 		// コンソールに出力
 		System.out.println(ans);
 	}
-	
+
 	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
 	// Q3のメソッド
 	public static void test(int[] num) {
@@ -64,7 +62,7 @@ public class Curriculum_New_1_18 {
 			System.out.println(num2);	
 		}
 	}
-	
+
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
 	// Q4のメソッド
 	public static void calculate(double x,double y) {
@@ -73,7 +71,7 @@ public class Curriculum_New_1_18 {
 		// 結果をコンソール出力
 		System.out.println(ans);
 	}
-	
+
 	// Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
 	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
 	// ※0は出力＆格納しないようにしてください。
@@ -81,35 +79,35 @@ public class Curriculum_New_1_18 {
 	public static int[] rndNumbers(int count) {
 		// 引数に整数を代入
 		int[] numbers = new int [count];
-		// 1〜100までのランダムな数字を作成・格納
-		Random rand = new Random();
-		int score = rand.nextInt(100)+1;
 		
 		for(int j = 0;j < count;j++) {	
+			// 1〜100までのランダムな数字を作成・格納
+			Random rand = new Random();
 			// 引数の回数分格納
-			numbers[j] = score;
+			numbers[j] = rand.nextInt(100)+1;
 			// 格納した値を順番にコンソールで出力		
-			System.out.println(score+j);
+			System.out.println(numbers[j]);
 		}
 		// 格納した値を返す
 		return numbers;
 	}
-	
+
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
 	// Q6のメソッド
 	public static double average(int[] total) {
 		// 戻り値の合計を出す
-		int num = Arrays.stream(total).sum();
+		int num3 = Arrays.stream(total).sum();
 		// 平均を定義
-		double bb = num / total.length;
+		double bb = num3 / total.length;
 		// コンソールに出力
 		System.out.println("");
 		System.out.println(bb);
+		System.out.println("");
 		// 平均値を返す
 		return bb;
 	}
-	
+
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 	// Q7のメソッド
 	public static boolean cc(double total2) {
