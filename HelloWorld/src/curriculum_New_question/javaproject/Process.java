@@ -26,6 +26,7 @@ public class Process {
 		this.wasyoku = wasyoku;
 	}
 
+	// null判定
 	public String cunntry() {
 		if(Objects.isNull(cunntry)) {
 			System.out.println("Erro");
@@ -35,7 +36,7 @@ public class Process {
 		}
 		return cunntry;
 	}
-	
+	// null判定
 	public String sushi() {
 		if(Objects.isNull(sushi)) {
 			System.out.println("Erro");
@@ -45,7 +46,7 @@ public class Process {
 		}
 		return sushi;
 	}
-	
+	// null判定
 	public String wasyoku() {
 		if(Objects.isNull(wasyoku)) {
 			System.out.println("Erro");
@@ -55,7 +56,7 @@ public class Process {
 		}
 		return wasyoku;
 	}
-	
+	// null判定
 	public String date() {
 		if(Objects.isNull(date)) {
 			System.out.println("Erro");
