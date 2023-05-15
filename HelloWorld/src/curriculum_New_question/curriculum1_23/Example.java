@@ -14,7 +14,7 @@ public class Example {
 		速度：80km/h
 	 	
 	 */
-		
+		// インスタンスに変数を代入
 		Process process = new Process("うさぎ", 1f, 2);
 		// setter
 		process.setRion("ライオン");
