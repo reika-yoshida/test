@@ -75,7 +75,7 @@ public class Process {
 		// wasyokuをコンソールに出力
 		System.out.println(this.wasyoku());
 		// dateをコンソールに出力
-		System.out.println(this.date());
+		System.out.println("今の現在日時は" + this.date() + "です");
 	}
 
 }
