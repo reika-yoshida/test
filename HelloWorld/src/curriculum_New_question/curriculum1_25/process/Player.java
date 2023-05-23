@@ -1,18 +1,16 @@
 package curriculum_New_question.curriculum1_25.process;
-
 import java.util.Random;
 
-
-//サブクラス
+// サブクラス
 public class Player extends Status{
-	//ランダムな数字を生成
+	// ランダムな数字を生成
 	public int Random() {
 		Random random = new Random();
 		int rand = random.nextInt(1000)+1;
 		return rand;
 	}
 	
-	//　サブクラスのコンストラクタ
+	// サブクラスのコンストラクタ
 	public Player() {
 		this.setHp(this.Random());
 		this.setMp(this.Random());
