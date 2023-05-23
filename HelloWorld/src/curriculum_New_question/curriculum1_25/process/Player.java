@@ -9,7 +9,7 @@ public class Player extends Status{
 		int rand = random.nextInt(1000)+1;
 		return rand;
 	}
-	
+
 	// サブクラスのコンストラクタ
 	public Player() {
 		this.setHp(this.Random());

@@ -5,9 +5,7 @@ import curriculum_New_question.curriculum1_25.process.Player;
 import curriculum_New_question.curriculum1_25.process.Status;
 
 public class Example {
-
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 		// インスタンスにscannerを代入
 		Scanner scanner = new Scanner(System.in);
 		// 文字列の受け取り
