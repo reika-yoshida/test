@@ -5,6 +5,7 @@ import curriculum_New_question.curriculum1_25.process.Player;
 import curriculum_New_question.curriculum1_25.process.Status;
 
 public class Example {
+	
 	public static void main(String[] args) {
 		// インスタンスにscannerを代入
 		Scanner scanner = new Scanner(System.in);
@@ -19,5 +20,3 @@ public class Example {
 		status.priDate(player);
 	}
 }
-
-
