@@ -8,6 +8,7 @@ public class Process {
 		// インスタンスにscannerを代入
 		Scanner scanner = new Scanner(System.in);
 		String aa = scanner.next();
+		scanner.close();
 
 		// aaをカンマ区切りでarraysに格納
 		String[] arrays = aa.split(",");
