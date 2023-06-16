@@ -9,8 +9,9 @@ class Person{
 	// 問題1：クラスフィールド「count」を定義してください（初期値：0,データ型：int）
 	public static int count = 0;
 
-	
+	// コンストラクタ作成
 	Person(String name, int age, double height, double weight){
+		// 各インスタンスフィールドに値をセット
 		this.name = name;
 		this.age = age;
 		this.height = height;
@@ -21,6 +22,7 @@ class Person{
 	
 	// BMI
 	public double bmi(){
+		// インスタンスを返す
 		return this.weight / height / height;
 	}
 
