@@ -4,6 +4,7 @@ class Main{
 	public static void main(String[] argos){
 		// Personクラスをインスタンス化し変数を代入
 		Person person1 = new Person("鈴木太郎", 20, 1.7, 60);
+		// print呼び出し
 		person1.print();
 		
 		// 問題3：Main.javaで System.out.printlnを使い「合計〇〇人です」と出力してください。〇〇はcountの値です。

@@ -28,8 +28,11 @@ class Person{
 
 	// コンソール出力
 	public void print(){
+		// name
 		System.out.println("名前は" + name + "です");
+		// age
 		System.out.println("年は" + age + "です");
+		// bmi
 		System.out.println("BMIは" + Math.floor(bmi()) + "です");
 	}
 	
